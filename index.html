@@ -3,43 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feria El Baratillo</title>
+    <title>Juego</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <canvas id="logoCanvas" width="400" height="80"></canvas>
-        <p class="subtitulo">¡Los mejores productos a precios de feria!</p>
-    </header>
-
-    <main class="contenedor">
-        <section class="productos">
-            <div class="categoria">
-                <h2>⚡ Electrónicos</h2>
-                <div class="lista-productos">
-                    <button class="btn-producto" onclick="mostrarDetalle('USB', '$5', 'Memoria de 64GB de alta velocidad.')">USB</button>
-                    <button class="btn-producto" onclick="mostrarDetalle('Chip Celular', '$3', 'Conectividad 4G/5G con saldo inicial.')">Chip Celular</button>
-                    <button class="btn-producto" onclick="mostrarDetalle('Cargador', '$10', 'Carga rápida de 20W tipo C.')">Cargador Celular</button>
-                </div>
-            </div>
-
-            <div class="categoria">
-                <h2>🏠 Doméstico</h2>
-                <div class="lista-productos">
-                    <button class="btn-producto" onclick="mostrarDetalle('Cocina Portátil', '$25', 'Ideal para camping, funciona con gas butano.')">Cocina Portátil</button>
-                    <button class="btn-producto" onclick="mostrarDetalle('Cuchillos', '$8', 'Set de 3 cuchillos de acero inoxidable.')">Cuchillos</button>
-                    <button class="btn-producto" onclick="mostrarDetalle('Encendedor', '$2', 'Recargable y resistente al viento.')">Encendedor</button>
-                </div>
-            </div>
-        </section>
-
-        <aside class="panel-info">
-            <h3>Información del Producto</h3>
-            <div id="vista-previa">
-                <p>Haz clic en cualquier producto para ver sus detalles aquí.</p>
-            </div>
-        </aside>
-    </main>
+    <div class="contenedor-juego">
+        <h1>Proyecto Videojuegos: Atrapa la Moneda</h1>
+        <p>Usa las <strong>flechas del teclado</strong> para moverte.</p>
+        
+        <canvas id="pantallaJuego" width="500" height="400"></canvas>
+    </div>
 
     <script src="script.js"></script>
 </body>
